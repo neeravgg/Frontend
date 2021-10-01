@@ -1,0 +1,80 @@
+/* second part */
+.mid{
+    max-width: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+.mid div > img{
+    height: 95vh;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.big{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content:center ;
+    
+    text-align: start;
+    margin-top: 2em;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 4em;
+    align-items: center;
+    justify-content:center ;
+    margin: 1em;
+}
+.sml{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content:center ;
+    grid-gap: 1em;
+    font-size: 1em;
+    text-align: start;
+    margin-top: 2em;
+    
+}
+.sml img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width:768px ){
+    .content{
+        max-width: 768px;
+        padding: 0 5px;
+    }
+    .sml{
+        grid-gap: 0.5em;
+        
+    }
+    .section{
+        
+        grid-gap: 1.5em;
+        grid-template-columns: auto;
+    }
+    .mid div > img{
+        height: 50vh;
+    }
+}
+@media (max-width:1024px ){
+    .content{
+        max-width: 1024px;
+        padding: 0 5px;
+    }
+    .sml{
+        grid-gap: 0.5em;
+    font-size: 0.8em;
+        
+    }
+    .section{
+        
+        grid-gap: 0.5em;
+       
+    }
+}
